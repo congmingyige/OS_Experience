@@ -1,0 +1,19 @@
+/usr/src/linux-headers-3.2.0-24/include/sound/hda_hwdep.h
+/usr/src/linux-headers-3.2.0-24/sound/pci/hda
+/usr/src/linux-headers-3.2.0-23-generic-pae/include/config/sensors/hdaps.h
+/usr/src/linux-headers-3.2.0-23-generic-pae/include/config/snd/hda
+/usr/src/linux-headers-3.2.0-24-generic-pae/include/config/sensors/hdaps.h
+/usr/src/linux-headers-3.2.0-24-generic-pae/include/config/snd/hda
+/usr/src/linux-headers-3.2.0-126-generic-pae/include/config/sensors/hdaps.h
+/usr/src/linux-headers-3.2.0-126-generic-pae/include/config/snd/hda
+/usr/src/linux-headers-3.2.0-23/include/sound/hda_hwdep.h
+/usr/src/linux-headers-3.2.0-23/sound/pci/hda
+/usr/src/linux-headers-3.2.0-126/include/sound/hda_hwdep.h
+/usr/src/linux-headers-3.2.0-126/sound/pci/hda
+/usr/share/doc/alsa-base/driver/hda_codec.txt.gz
+/usr/share/alsa/init/hda
+/lib/modules/3.2.0-24-generic-pae/kernel/drivers/platform/x86/hdaps.ko
+/lib/modules/3.2.0-24-generic-pae/kernel/sound/pci/hda
+/lib/modules/3.2.0-126-generic-pae/kernel/drivers/platform/x86/hdaps.ko
+/lib/modules/3.2.0-126-generic-pae/kernel/sound/pci/hda
+infomation of subproces : 0

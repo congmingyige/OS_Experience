@@ -1,0 +1,62 @@
+
+1.输入法
+https://zhidao.baidu.com/question/149991169.html
+
+ibus-setup
+设置快捷键：字符(如A)+选择的修饰符(如Control,Alt)->添加->确定
+如快捷键Ctrl+Shift：必须先按Ctrl，再按Shift_L(Control+Shift_L)，才能成功，所以设置如Ctrl+Tab比较合理
+当前输入法：先Ctrl 后Shift
+
+2.修改显示语言
+左图标之System Settings->language Support
+->Language->Language for menus and windows:把“汉语(中国)/English”拉到最上方
+
+3.取消自动锁屏
+https://www.cnblogs.com/lanxuezaipiao/p/3617436.html
+
+4.解决“虚拟机似乎正在使用中”：
+http://jingyan.baidu.com/article/4ae03de3fa2ae93eff9e6bb0.html
+
+5.设置屏幕全铺设
+编辑->全选项->显示器->自动适应客户机
+
+6.使用u盘
+虚拟机->可移动设备->USB_name->连接...
+
+7.
+卸载软件
+左图标之Ubuntu软件中心->已安装->选择软件卸载
+
+8.
+ova文件导入vmware workstation失败的解决方法
+http://sdnhub.cn/index.php/ova-import-vmware-workstation/
+
+如何在VMWare中加载ova文件
+打开VMWare WorkStation, 点击“打开虚拟机”，选择要导入的ova文件；
+点击确认后，会提示让你选择要导入的虚拟机的“存储路径”；设置完存储路径后，点击导入；
+系统执行导入文件操作（如果ova文件很大的话，花费的时间也会较长）；
+导入完成后，点击打开虚拟机搜索即可
+
+9.
+虚拟机打不开：
+maybe 内存设置小了，把内存设置大一点
+
+10.
+无法连接虚拟设备 sata0:1,因为主机上没有相应的设备。 您要在每次开启此虚拟机时
+
+进编辑虚拟机设置--选中硬盘--点高级--在 虚拟机设备节点中选sata0:1
+
+11.
+su: Authentication failure
+
+$ sudo passwd root
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+12.
+打开虚拟机时：虚拟机正在被使用
+删除虚拟机文件夹下的lck文件夹
+
+13.
+

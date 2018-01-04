@@ -1,0 +1,63 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/times.h>
+#include <sys/resource.h>
+#include <time.h>
+#include <sys/types.h>
+#include <signal.h>
+
+pid_t pid;
+char str[50][50];
+int i,j;
+
+void time_print(clock_t time)
+{
+	long tps=sysconf(_SC_CLK_TCK);
+	printf("%6.2f secs\n",(float)time/tps);
+}
+
+void work()
+{
+}
+
+int main(int argc,char *argv[]))
+{
+	clock_t start,end,time;
+	struct tms t_start,t_end;
+	int count=10,count_=count;
+	int pri=atoi(argv[1]);	//-20 -10 0 10 19
+	printf("priority = %d\n",pri);	
+	int i,j,k;
+
+	start=times(&t_start);
+	while (count)
+	{
+		count--;
+		while ((pid=fork())==-1) ;
+		
+		if (pid>0)
+		{
+setpriority(PRIO_PROCESS,pid,pri);
+			exit(0);
+		}
+		else
+		{
+			for (i=0;i<50;i++)
+				for (j=0;j<50;j++)
+					str[i][j]='a';
+			work();
+		}
+	}	
+	end=times(&t_end);
+	//fork():子进程会拷贝父进程"fork()"语句之后的代码。while循环对父进程添加"exit(0)",让父进程结束，让子进程执行while循环。跳出while循环的是子进程，执行"work()"函数count次
+
+	time=end-start;
+	printf("total time (%d times) : " , count_);
+	time_print(time);
+
+	return 0;
+}
+
+

@@ -1,0 +1,60 @@
+1.打开终端Terminal
+I.左图标
+II.Ctrl+Alt+T
+
+2.系统设置：
+System Settings(左边的图标)
+
+3.截屏
+屏幕:Prt
+窗口:Alt+Prt
+选区:Shift+Prt
+
+命令行右边的上下滑键：翻一整页
+
+框可拉大拉小
+
+若有多页，最后一页可以按多次Enter，使恰好补齐一个屏幕
+
+直接把图片拉到word文档中
+
+4.
+more less 分页查看 :滚轮上下转动
+http://www.cnblogs.com/aijianshi/p/5750911.html
+
+etc. ./6 | less
+
+5.进入超级权限
+in：sudo su
+out：exit
+
+6.粘贴内容到虚拟机
+编辑->粘贴(Ctrl+V)
+
+7.
+关闭窗口:Alt+F4
+全屏：Ctrl+Alt+Enter
+
+8.
+Segmentation fault (core dumped)
+运行程序所需的参数不够(终端输入的参数不够)
+
+9.
+.h文件：
+
+1.h
+extern int a
+
+x.c
+int a
+use a
+
+y.c
+use a
+
+10.
+项目(contain .h)
+gcc add.c main.c -o app
+./app
+
+11.
